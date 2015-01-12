@@ -6,5 +6,10 @@ export default DS.Model.extend({
     "score": DS.attr("number"),
     "time": DS.attr("number"),
     "title": DS.attr("string"),
-    "url": DS.attr("string")
+    "url": DS.attr("string"),
+
+    // computed properties,
+
+    // added state variables
+    "isLoading": null
 });

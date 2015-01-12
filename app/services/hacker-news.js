@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Object.extend({
 
-
+    /**
+     * Fetch the top stories from hacker news.
+     * @returns {Rx.Promise} - resolves to an int array.
+     */
     getStories: function () {
         "use strict";
 
@@ -19,6 +22,11 @@ export default Ember.Object.extend({
         });
     },
 
+    /**
+     * Fetch story details from hacker news given story id.
+     * @param storyId
+     * @returns {Rx.Promise} - resolves to a json object.
+     */
     getStoryDetail: function (storyId) {
         "use strict";
 
