@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
 
+    prop: "hello",
+
     //TODO: for test/debug, will use a component model for app.
     actions: {
         foobar: function () {
