@@ -50,7 +50,7 @@ test('it should process all items in the queue', function () {
     });
 
     var progressCount = 0;
-    var progressFunc = function (model, percent) {
+    var progressFunc = function (model, modelReference) {
         progressCount++;
     };
     var doneFunc = function () {
@@ -61,7 +61,7 @@ test('it should process all items in the queue', function () {
     };
 
     stop();
-    service.processStories([1, 2], progressFunc, doneFunc);
+    service.processStories([{id:1}, {id:2}], progressFunc, doneFunc);
 
 
 });

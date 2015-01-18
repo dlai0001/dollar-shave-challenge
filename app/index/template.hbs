@@ -1,3 +1,11 @@
-asdfasfsf
-
-<button {{action 'foobar'}} data-foo="{{prop}}">Foobar</button>
+<ul>
+    {{#each}}
+        <li>
+            {{#if isLoaded}}
+                Loaded
+            {{else}}
+                Not Loaded
+            {{/if}}
+        </li>
+    {{/each}}
+</ul>

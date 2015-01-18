@@ -9,6 +9,9 @@ moduleFor('route:index', 'IndexRoute', {
 });
 
 test('it exists', function() {
-  var route = this.subject();
+  var route = this.subject({
+      storyQueueProcessorService:{},
+      hackerNewsService:{}
+  });
   ok(route);
 });

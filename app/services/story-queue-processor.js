@@ -21,10 +21,10 @@ export default Ember.Object.extend({
 
         var processItemFunction = function () {
 
-            _this.hackerNewsService.getStoryDetail(storiesArray[currentItemIndex]).then(function (storyDetails) {
+            _this.hackerNewsService.getStoryDetail(storiesArray[currentItemIndex].id).then(function (storyDetails) {
 
                 //console.log("retreived story details", storyDetails);
-                progressFunction(storyDetails, (currentItemIndex + 1) / storiesArray.length);
+                progressFunction(storyDetails, storiesArray[currentItemIndex]);
 
             }).finally(function () {
 
