@@ -1,5 +1,34 @@
-html, body
-  margin: 20px
+div
+  margin 0rem 0rem 0rem 0rem
+  padding 0rem 0rem 0rem 0rem
 
-h1
-  color: #888888
+.spinner
+  margin-left 2rem
+  margin-top 1rem
+  width 2rem
+  height 2rem
+  position relative
+
+
+/*Mobile phone protrait*/
+@media screen and (max-width: 24rem)
+  html,body
+    margin 0rem 0rem 0rem 0rem
+
+  .page-header
+    width 100%
+    background-color #FF4500
+    color #FFFFFF
+  
+  h1#title
+    margin 0rem
+
+  ul#stories-list
+    list-style none
+
+
+/*Mobile phone landscape*/
+@media screen and (min-width: 24rem)
+  h1
+    font-size 0.5rem
+

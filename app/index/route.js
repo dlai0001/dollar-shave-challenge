@@ -25,20 +25,8 @@ export default Ember.Route.extend({
         }.bind(this)).then(function (storiesArray) {
             console.log("Queing up fetching stories.");
 
-            var progressHandler = function (storyData, model, percent) {
-                console.log("Progress handler", storyData, model, percent);
-
-                this.set("percentLoaded", percent);
-
-                model.set("url", storyData.url);
-                model.set("by", storyData.by);
-                model.set("kids", storyData.kids);
-                model.set("score", storyData.score);
-                model.set("text", storyData.text);
-                model.set("time", storyData.time);
-                model.set("title", storyData.title);
-                model.set("isLoaded", true);
-
+            var progressHandler = function (percent) {
+                console.log("Progress handler:", percent, "%");
             }.bind(this);
 
             var doneHandler = function () {

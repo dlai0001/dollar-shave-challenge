@@ -20,11 +20,24 @@ export default Ember.Object.extend({
         var _this = this;
 
         var processItemFunction = function () {
-
+            storiesArray[currentItemIndex].set("isLoading", true);
             _this.hackerNewsService.getStoryDetail(storiesArray[currentItemIndex].id).then(function (storyDetails) {
 
-                //console.log("retreived story details", storyDetails);
-                progressFunction(storyDetails, storiesArray[currentItemIndex]);
+                console.log("retreived story details", storyDetails);
+
+                var model = storiesArray[currentItemIndex];
+                model.set("isLoading", false);
+                model.set("isLoaded", true);
+
+                model.set("url", storyDetails.url);
+                model.set("by", storyDetails.by);
+                model.set("kids", storyDetails.kids);
+                model.set("score", storyDetails.score);
+                model.set("text", storyDetails.text);
+                model.set("time", storyDetails.time);
+                model.set("title", storyDetails.title);
+
+                progressFunction(100 * (currentItemIndex + 1)/storiesArray.length);
 
             }).finally(function () {
 
@@ -37,7 +50,6 @@ export default Ember.Object.extend({
                     });
                 }
             });
-
         };
 
 
