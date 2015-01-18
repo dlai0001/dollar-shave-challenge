@@ -2,9 +2,15 @@
     {{#each}}
         <li>
             {{#if isLoaded}}
-                Loaded
+                <h2>{{title}}</h2>
+                <div>
+                    by: {{by}}
+                </div>
+                <div>
+                    link: <a href="{{url}}">{{url}}</a>
+                </div>
             {{else}}
-                Not Loaded
+                {{spinkit-spinner}}
             {{/if}}
         </li>
     {{/each}}

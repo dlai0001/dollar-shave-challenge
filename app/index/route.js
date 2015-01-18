@@ -30,6 +30,7 @@ export default Ember.Route.extend({
 
                 this.set("percentLoaded", percent);
 
+                model.set("url", storyData.url);
                 model.set("by", storyData.by);
                 model.set("kids", storyData.kids);
                 model.set("score", storyData.score);
