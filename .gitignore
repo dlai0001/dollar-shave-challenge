@@ -4,6 +4,9 @@
 /dist
 /tmp
 
+# deploy generated artifacts
+/.divshot-cache
+
 # dependencies
 /node_modules
 /bower_components
