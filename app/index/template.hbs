@@ -1,18 +1,7 @@
 <ul id="stories-list">
     {{#each story in filteredContent}}
         <li>
-            {{#if story.isLoaded}}
-                <h2>{{story.title}}</h2>
-
-                <div>
-                    by: {{story.by}} - {{story.formattedDate}}
-                </div>
-                <div>
-                    link: <a href="{{story.url}}">{{story.url}}</a>
-                </div>
-            {{else}}
-                {{spinkit-spinner}}
-            {{/if}}
+            {{story-display story=story}}
         </li>
     {{/each}}
 </ul>

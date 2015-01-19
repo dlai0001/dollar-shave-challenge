@@ -1,0 +1,18 @@
+{{#if story.isLoaded}}
+    <div {{action "displayStory"}}>
+        <h2 class="story-title">{{story.title}}</h2>
+
+        <div class="story-by">
+            by: {{story.by}} - {{story.formattedDate}}
+        </div>
+        <div class="story-url">
+            link: <a href="{{story.url}}">{{story.url}}</a>
+        </div>
+
+        {{#if displayStory}}
+            {{story-inline-display url=story.url}}
+        {{/if}}
+    </div>
+{{else}}
+    {{spinkit-spinner}}
+{{/if}}
