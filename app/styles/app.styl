@@ -1,6 +1,12 @@
+/*Clear out div padding and margins from the browser defaults.*/
 div
   margin 0rem 0rem 0rem 0rem
   padding 0rem 0rem 0rem 0rem
+
+.page-header
+  width 100%
+  background-color #FF4500
+  color #FFFFFF
 
 .spinner
   margin-left 2rem
@@ -9,29 +15,44 @@ div
   height 2rem
   position relative
 
+ul#stories-list
+  list-style none
 
-/*Mobile phone protrait*/
-@media screen and (max-width: 24rem)
-  html,body
+/*Mobile phone protrait - iphone6 max width*/
+@media screen and (max-width: 26rem)
+  html, body
     margin 0rem 0rem 0rem 0rem
 
-  .page-header
-    width 100%
-    background-color #FF4500
-    color #FFFFFF
-  
   h1#title
     margin 0rem
+    font-size 1rem
+    width 100%
 
   ul#stories-list
     list-style none
+    padding-left 0.2rem
+    padding-right 0.2rem
+    font-size 0.5rem
 
   .story-url
     display none
 
+/*Tablet and portrait views*/
+@media screen and (min-width: 26.000001rem) and (max-width: 64rem)
 
-/*Mobile phone landscape*/
-@media screen and (min-width: 24rem)
-  h1
-    font-size 0.5rem
+  html, body
+    margin 0rem 0rem 0rem 0rem
 
+  h1#title
+    margin 0rem
+    font-size 2rem
+    width 100%
+
+
+/* Desktop and wide format */
+@media screen and (min-width: 64.0000001rem)
+
+  div.main-application
+    width 64rem
+    margin-left auto
+    margin-right auto
