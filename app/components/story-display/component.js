@@ -16,6 +16,14 @@ export default Ember.Component.extend({
             this.set("displayStory", false);
             return false;
         }
+    },
+    gestures: {
+        tap: function () {
+            //for some strange reason actions are not available
+            // in this context.
+            this.set("displayStory", true);
+            return false;
+        }
     }
 
 

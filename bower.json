@@ -13,6 +13,8 @@
     "ember-qunit": "0.1.8",
     "ember-qunit-notifications": "0.0.4",
     "qunit": "~1.15.0",
-    "spinkit": "~1.0.1"
+    "spinkit": "~1.0.1",
+    "hammerjs": "1.1.3",
+    "ember-hammer": "~1.0.0"
   }
 }

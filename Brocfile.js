@@ -19,4 +19,8 @@ var app = new EmberApp();
 
 app.import('bower_components/spinkit/css/spinkit.css');
 
+// hammer JS for registering mobile touch actions
+app.import('bower_components/hammerjs/hammer.js');
+app.import('bower_components/ember-hammer/ember-hammer.js');
+
 module.exports = app.toTree();
