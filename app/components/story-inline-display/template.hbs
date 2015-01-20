@@ -1,6 +1,16 @@
 <div class="story-inline-display">
-    <button {{action "hideStory" bubbles=false}}>X</button>
-    <iframe src="{{url}}">
+    <div class="window-bar">
+        <button class="story-inline-close-button" {{action "hideStory" bubbles=false}}>X</button>
+    </div>
 
-    </iframe>
+    <div class="iframe-wrapper">
+        <iframe class="story-inline-iframe" src="{{url}}">
+        </iframe>
+    </div>
+
+    <div class="anti-click-scim"></div>
+
+    <div class="footer-bar">
+        <button class="open-story-button" {{action "openStory" bubbles=false}}>Open</button>
+    </div>
 </div>

@@ -1,7 +1,9 @@
 <ul id="stories-list">
-    {{#each story in filteredContent}}
-        <li>
-            {{story-display story=story}}
-        </li>
+    {{#each story in content}}
+        {{#if story.isDisplayable}}
+            <li>
+                {{story-display story=story}}
+            </li>
+        {{/if}}
     {{/each}}
 </ul>

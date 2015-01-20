@@ -10,12 +10,16 @@ export default DS.Model.extend({
     "url": DS.attr("string"),
 
     // computed properties,
-    formattedDate: function() {
+    formattedDate: function () {
         "use strict";
         return moment(this.get("time")).format("M/D/YYYY h:mm");
     }.property("time"),
 
     // added state variables
     "isLoaded": false,
-    "isLoading": false
+    "isLoading": false,
+    "isDisplayable": function () {
+        "use strict";
+        return this.get('isLoaded') || this.get('isLoading');
+    }.property("isLoaded", "isLoading")
 });

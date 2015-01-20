@@ -1,12 +1,9 @@
-/*Clear out div padding and margins from the browser defaults.*/
-div
-  margin 0rem 0rem 0rem 0rem
-  padding 0rem 0rem 0rem 0rem
+@require "theme"
 
 .page-header
   width 100%
-  background-color #FF4500
-  color #FFFFFF
+  background-color primaryColor
+  color primaryTextColor
 
 .spinner
   margin-left 2rem
@@ -17,6 +14,56 @@ div
 
 ul#stories-list
   list-style none
+  width 100%
+
+div.story-inline-display
+  position relative
+  margin-right 1rem
+  margin-left 1rem
+
+  div.window-bar
+    position absolute
+    background-color primaryColor
+    z-index 3
+    top 0rem
+    height 2rem
+    width 100%
+    border-top-left-radius 1rem
+    border-top-right-radius 1rem
+
+  div.footer-bar
+    position absolute
+    background-color primaryColor
+    height 2rem
+    z-index 3
+    bottom 2rem
+    width 100%
+    border-bottom-left-radius 1rem
+    border-bottom-right-radius 1rem
+
+  div.anti-click-scim
+    z-index 2
+    position absolute
+    top 0rem
+    bottom 0rem
+    left 0rem
+    right 0rem
+
+  button.story-inline-close-button
+    right 0rem
+    position absolute
+    background-color primaryAccentColor
+    border-color primaryAccentShadow
+    border-top-right-radius 1rem
+
+  button.open-story-button
+    right 0rem
+    position absolute
+    background-color primaryAccentColor
+    border-color primaryAccentShadow
+    border-bottom-right-radius 1rem
+
+
 
 /*Mobile phone protrait - iphone6 max width*/
 @media screen and (max-width: 26rem)
@@ -29,13 +76,30 @@ ul#stories-list
     width 100%
 
   ul#stories-list
-    list-style none
     padding-left 0.2rem
     padding-right 0.2rem
     font-size 0.5rem
 
   .story-url
     display none
+
+  div.story-inline-display
+    display inline-block
+
+    div.window-bar
+      height 2rem
+
+    button.story-inline-close-button
+      height 2rem
+
+    button.open-story-button
+      height 2rem
+      font-size 1rem
+
+    iframe.story-inline-iframe
+      width 100%
+      display block
+      height 18rem
 
 /*Tablet and portrait views*/
 @media screen and (min-width: 26.000001rem) and (max-width: 64rem)
@@ -48,11 +112,67 @@ ul#stories-list
     font-size 2rem
     width 100%
 
+  div.story-url
+    display none
+
+  div.story-inline-display
+    display inline-block
+
+    div.window-bar
+      height 2rem
+
+    button.story-inline-close-button
+      height 2rem
+      font-size 1.5rem
+
+    button.open-story-button
+      height 2rem
+      font-size 1.5rem
+
+    div.iframe-wrapper
+      display inline-block
+      overflow-style panner
+
+      iframe.story-inline-iframe
+        // zoom: 0.50;
+        -webkit-transform scale(0.75)
+        display block
+        height 26rem;
+
+
 
 /* Desktop and wide format */
 @media screen and (min-width: 64.0000001rem)
+
+  html, body
+    background-color #333333
 
   div.main-application
     width 64rem
     margin-left auto
     margin-right auto
+    background-color #FFFFFF
+
+  div.story-inline-display
+    display inline-block
+
+    div.window-bar
+      height 2rem
+
+    button.story-inline-close-button
+      height 2rem
+      font-size 1rem
+
+    button.open-story-button
+      height 2rem
+      font-size 1rem
+
+    div.iframe-wrapper
+      max-width 100%
+      max-height 20em;
+      overflow-style panner
+
+      iframe.story-inline-iframe
+        // zoom: 0.50;
+        -webkit-transform scale(0.75)
+        display block
