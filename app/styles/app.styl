@@ -63,8 +63,6 @@ div.story-inline-display
     border-color primaryAccentShadow
     border-bottom-right-radius 1rem
 
-
-
 /*Mobile phone protrait - iphone6 max width*/
 @media screen and (max-width: 26rem)
   html, body
@@ -88,18 +86,30 @@ div.story-inline-display
 
     div.window-bar
       height 2rem
+      font-size 1.5rem
 
     button.story-inline-close-button
       height 2rem
+      font-size 1.5rem
 
     button.open-story-button
       height 2rem
       font-size 1rem
 
-    iframe.story-inline-iframe
-      width 100%
-      display block
-      height 18rem
+    div.iframe-wrapper
+      display inline-block
+      overflow-style panner
+
+      iframe.story-inline-iframe
+        -webkit-transform scale(0.5)
+        transform scale(0.5)
+        display block
+        height 18rem;
+
+        @media (orientation: landscape)
+          height 8rem;
+          -webkit-transform scale(0.4)
+          transform scale(0.4)
 
 /*Tablet and portrait views*/
 @media screen and (min-width: 26.000001rem) and (max-width: 64rem)
@@ -134,12 +144,15 @@ div.story-inline-display
       overflow-style panner
 
       iframe.story-inline-iframe
-        // zoom: 0.50;
         -webkit-transform scale(0.75)
+        transform scale(0.75)
         display block
         height 26rem;
 
-
+        @media (orientation: landscape)
+          height 20rem;
+          -webkit-transform scale(0.6)
+          transform scale(0.6)
 
 /* Desktop and wide format */
 @media screen and (min-width: 64.0000001rem)
@@ -161,18 +174,17 @@ div.story-inline-display
 
     button.story-inline-close-button
       height 2rem
-      font-size 1rem
+      font-size 1.5rem
 
     button.open-story-button
       height 2rem
-      font-size 1rem
+      font-size 1.5rem
 
     div.iframe-wrapper
-      max-width 100%
-      max-height 20em;
+      display inline-block
       overflow-style panner
 
       iframe.story-inline-iframe
-        // zoom: 0.50;
-        -webkit-transform scale(0.75)
+        -webkit-transform scale(0.80)
         display block
+        height 30rem;

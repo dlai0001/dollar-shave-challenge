@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aebd8d1-d75b-41ab-8baa-a9245a71c68e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/theme.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/app.styl" afterPath="$PROJECT_DIR$/app/styles/app.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/story-inline-display/component.js" afterPath="$PROJECT_DIR$/app/components/story-inline-display/component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/controller.js" afterPath="$PROJECT_DIR$/app/index/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/hacker-news.js" afterPath="$PROJECT_DIR$/app/services/hacker-news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/story.js" afterPath="$PROJECT_DIR$/app/models/story.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/story-inline-display/template.hbs" afterPath="$PROJECT_DIR$/app/components/story-inline-display/template.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index/template.hbs" afterPath="$PROJECT_DIR$/app/index/template.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dollar-shave-challenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,18 +78,8 @@
       <file leaf-file-name="app.styl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/styles/app.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
-              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="theme.styl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styles/theme.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="165">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="4.357542" vertical-offset="0" max-vertical-offset="2925">
+              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -484,6 +466,7 @@
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesHandlebars" value="false" />
     <property name="LayoutCode.rearrangeEntriesStylus" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/dlai/projects/dollar-shave-challenge/app/styles/theme.styl" />
   </component>
   <component name="RunManager" selected="Node.js.hacker-news-test.js">
     <configuration default="false" name="hacker-news-test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="hacker-news-test.js" working-dir="$PROJECT_DIR$/tests/unit/services">
@@ -877,7 +860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/theme.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="165">
+        <state vertical-scroll-proportion="0.13321492" vertical-offset="0" max-vertical-offset="563">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
@@ -885,8 +868,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/app.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2745">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        <state vertical-scroll-proportion="4.357542" vertical-offset="0" max-vertical-offset="2925">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
           <folding />
         </state>
       </provider>
