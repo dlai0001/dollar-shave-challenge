@@ -13,13 +13,19 @@
   position relative
 
 ul#stories-list
+  position relative;
+  display inline-block
   list-style none
   width 100%
+
+  li>div
+    display inline-block
 
 div.story-inline-display
   position relative
   margin-right 1rem
   margin-left 1rem
+  width 100%
 
   div.window-bar
     position absolute
@@ -65,6 +71,10 @@ div.story-inline-display
 
   div.iframe-wrapper
     overflow: hidden
+    width 100%
+
+    iframe
+      width 100%
 
 
 /*Mobile phone protrait - iphone6 max width*/
@@ -109,6 +119,7 @@ div.story-inline-display
         transform scale(0.5)
         display block
         height 18rem;
+        max-width 26rem
 
         @media (orientation: landscape)
           height 8rem;
@@ -152,6 +163,8 @@ div.story-inline-display
         transform scale(0.75)
         display block
         height 26rem;
+        max-width 100%
+        max-width 64rem
 
         @media (orientation: landscape)
           height 20rem;
@@ -192,3 +205,4 @@ div.story-inline-display
         -webkit-transform scale(0.80)
         display block
         height 30rem;
+        max-width 64rem
